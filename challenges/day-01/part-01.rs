@@ -24,10 +24,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let distance = columns[0]
         .iter()
         .enumerate()
-        .fold(0, |accum, (i, num)| {
-            accum + isize::abs(num - columns[1][i])
-        });
-    
+        .fold(0, |accum, (i, num)| accum + isize::abs(num - columns[1][i]));
+
     println!("Distance: {}", distance);
 
     Ok(())
