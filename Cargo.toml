@@ -3,6 +3,9 @@ name = "advent-of-code-2024"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+regex = "1.11.1"
+
 [[bin]]
 name = "1-1"
 path = "./challenges/day-01/part-01.rs"
